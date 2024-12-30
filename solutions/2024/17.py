@@ -1,16 +1,15 @@
 from typing import List, Tuple
-from collections import deque
 
 a = None
 b = None
 c = None
 
 
-def literal(operand):
+def literal(operand: int) -> int:
     return operand
 
 
-def combo(operand):
+def combo(operand: int) -> int:
     if 0 <= operand <= 3:
         return operand
     elif operand == 4:
@@ -21,7 +20,7 @@ def combo(operand):
         return c
 
 
-def run(program: List[int]):
+def run(program: List[int]) -> None | Tuple[int]:
     global a, b, c
     output = tuple()
     i = 0
@@ -53,7 +52,7 @@ def run(program: List[int]):
     return output
 
 
-def test():
+def test() -> None:
     global a, b, c
 
     c = 9
@@ -116,6 +115,7 @@ if __name__ == "__main__":
     non_recursive_program_list = program_list[:-2]
 
     a_list = [0]
+    previous_a = []
     for elem in program_list[::-1]:
         previous_a = []
         for a in a_list:

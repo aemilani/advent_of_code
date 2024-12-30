@@ -1,15 +1,16 @@
 import numpy as np
 from collections import deque
+from typing import List, Tuple, Set
 
 
 directions = [(0, 1), (1, 0), (0, -1), (-1, 0)]
 
 
-def is_valid_move(x, y, seen, mat):
+def is_valid_move(x: int, y: int, seen: Set[Tuple[int, int]], mat: np.array) -> bool:
     return 0 <= x < mat.shape[0] and 0 <= y < mat.shape[1] and mat[x, y] == '.' and (x, y) not in seen
 
 
-def find_shortest_path(mat: np.array):
+def find_shortest_path(mat: np.array) -> None | List[Tuple[int, int]]:
     start = (0, 0)
     end = (mat.shape[0] - 1, mat.shape[1] - 1)
 

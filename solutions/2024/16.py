@@ -1,12 +1,12 @@
 import numpy as np
-from typing import Tuple, List, Set
+from typing import Tuple, List
 from collections import deque
 
 
 directions = [(0, 1), (1, 0), (0, -1), (-1, 0)]
 
 
-def calc_score(path):
+def calc_score(path: List[Tuple[int, int]]) -> int:
     score = 0
     dirs = [(0, 1)]
     for i in range(1, len(path)):
@@ -28,7 +28,7 @@ def turn_left(current_direction: Tuple[int, int]) -> Tuple[int, int]:
     return directions[(directions.index(current_direction) - 1 + len(directions)) % len(directions)]
 
 
-def print_maze(maze):
+def print_maze(maze: List[List[str]]):
     maze_str = ''
     for row in maze:
         row_str = ''
@@ -42,11 +42,6 @@ def print_maze(maze):
 if __name__ == "__main__":
     with open('../../data/input/16.txt', 'r') as f:
         string = f.read().strip()
-
-    # string = ('#################\n#...#...#...#..E#\n#.#.#.#.#.#.#.#.#\n#.#.#.#...#...#.#\n#.#.#.#.###.#.#.#\n'
-    #           '#...#.#.#.....#.#\n#.#.#.#.#.#####.#\n#.#...#.#.#.....#\n#.#.#####.#.###.#\n#.#.#.......#...#\n'
-    #           '#.#.###.#####.###\n#.#.#...#.....#.#\n#.#.#.#####.###.#\n#.#.#.........#.#\n#.#.#.#########.#\n'
-    #           '#S#.............#\n#################')
 
     maze = np.array([list(row) for row in string.split('\n')])
 
