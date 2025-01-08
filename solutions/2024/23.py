@@ -3,7 +3,7 @@ from itertools import combinations
 
 
 def get_graph(input_string: str) -> defaultdict:
-    connections = [(row.split('-')[0], row.split('-')[1]) for row in input_string.strip().split('\n')]
+    connections = [(row.split('-')[0], row.split('-')[1]) for row in input_string.split('\n')]
     graph = defaultdict(list)
     for c1, c2 in connections:
         graph[c1].append(c2)
