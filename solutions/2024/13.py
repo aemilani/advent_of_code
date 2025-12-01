@@ -38,7 +38,7 @@ def decode_input_string(string_input: str) -> List[List[Tuple[int, int]]]:
 
 
 if __name__ == "__main__":
-    with open('../../data/input/13.txt', 'r') as f:
+    with open('../../data/2024/13.txt', 'r') as f:
         string = f.read().strip()
 
     claw_machines = decode_input_string(string)

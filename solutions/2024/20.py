@@ -24,7 +24,7 @@ def set_shortest_path_lens(maze: List[List[str]], end: Tuple[int, int]) -> List[
 
 
 if __name__ == '__main__':
-    with open('../../data/input/20.txt', 'r') as f:
+    with open('../../data/2024/20.txt', 'r') as f:
         string = f.read().strip()
 
     maze = [list(row) for row in string.split('\n')]

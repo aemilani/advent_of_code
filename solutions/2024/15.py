@@ -211,7 +211,7 @@ def get_map_str(mat: np.array) -> np.array:
 
 
 if __name__ == "__main__":
-    with open('../../data/input/15.txt', 'r') as f:
+    with open('../../data/2024/15.txt', 'r') as f:
         string = f.read().strip()
 
     warehouse_str = string.split('\n\n')[0].strip()

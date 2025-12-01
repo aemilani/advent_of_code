@@ -123,7 +123,7 @@ def test_run():
 if __name__ == "__main__":
     test_run()
 
-    with open('../../data/input/12.txt', 'r') as f:
+    with open('../../data/2024/12.txt', 'r') as f:
         string = f.read().strip()
 
     cost_1, cost_2 = run(string)

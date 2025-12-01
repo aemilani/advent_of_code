@@ -1,7 +1,7 @@
 import numpy as np
 
 
-with open('../../data/input/01.txt', 'r') as f:
+with open('../../data/2024/01.txt', 'r') as f:
     string = f.read().strip()
 
 l1 = np.sort(np.array(string.split()[:-1:2]).astype(int))

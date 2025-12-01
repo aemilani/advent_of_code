@@ -43,7 +43,7 @@ def find_shortest_path(mat: np.array) -> None | List[Tuple[int, int]]:
 
 
 if __name__ == "__main__":
-    with open('../../data/input/18.txt', 'r') as f:
+    with open('../../data/2024/18.txt', 'r') as f:
         string = f.read().strip()
 
     coordinates = [(int(row.split(',')[1]), int(row.split(',')[0])) for row in string.split('\n')]

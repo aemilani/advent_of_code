@@ -64,7 +64,7 @@ def calc_safety_factor(grid: np.array) -> int:
 
 
 if __name__ == "__main__":
-    with open('../../data/input/14.txt', 'r') as f:
+    with open('../../data/2024/14.txt', 'r') as f:
         string = f.read().strip()
 
     robot_list = decode_input_string(string)

@@ -35,7 +35,7 @@ def part_1(input_string: str) -> int:
 
 
 if __name__ == '__main__':
-    with open('../../data/input/25.txt', 'r') as f:
+    with open('../../data/2024/25.txt', 'r') as f:
         string = f.read().strip()
 
     print(f'Part 1: {part_1(string)}')

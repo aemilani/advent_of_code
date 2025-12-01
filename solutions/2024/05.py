@@ -12,7 +12,7 @@ def rule_holds(r1, r2, update):
 
 
 if __name__ == "__main__":
-    with open('../../data/input/05.txt', 'r') as f:
+    with open('../../data/2024/05.txt', 'r') as f:
         string = f.read().strip()
 
     rules = string.split('\n\n')[0].split('\n')

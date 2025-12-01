@@ -20,7 +20,7 @@ def is_safe_tol(arr):
 
 
 if __name__ == "__main__":
-    with open('../../data/input/02.txt', 'r') as f:
+    with open('../../data/2024/02.txt', 'r') as f:
         string = f.read().strip()
     reports = string.split('\n')
 

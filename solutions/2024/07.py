@@ -11,7 +11,7 @@ def do_operation(n1, n2, op):
 
 
 if __name__ == "__main__":
-    with open('../../data/input/07.txt', 'r') as f:
+    with open('../../data/2024/07.txt', 'r') as f:
         string = f.read().strip()
     lis = string.split('\n')
 

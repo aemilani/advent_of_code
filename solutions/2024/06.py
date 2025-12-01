@@ -43,7 +43,7 @@ def step_guard(mat, guard_symbol, guard_loc):
 
 
 if __name__ == "__main__":
-    with open('../../data/input/06.txt', 'r') as f:
+    with open('../../data/2024/06.txt', 'r') as f:
         string = f.read().strip()
 
     # string = ('....#.....\n.........#\n..........\n..#.......\n.......#..\n'

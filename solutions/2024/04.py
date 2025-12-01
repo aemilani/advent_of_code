@@ -1,7 +1,7 @@
 import numpy as np
 
 
-with open('../../data/input/04.txt', 'r') as f:
+with open('../../data/2024/04.txt', 'r') as f:
     string = f.read().strip()
 
 mat = []

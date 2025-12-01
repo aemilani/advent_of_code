@@ -86,7 +86,7 @@ def test() -> None:
 
 
 if __name__ == "__main__":
-    with open('../../data/input/17.txt', 'r') as f:
+    with open('../../data/2024/17.txt', 'r') as f:
         string = f.read().strip()
 
     registers = string.split('\n\n')[0].split('\n')

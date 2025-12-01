@@ -1,7 +1,7 @@
 import numpy as np
 
 
-with open('../../data/input/08.txt', 'r') as f:
+with open('../../data/2024/08.txt', 'r') as f:
     string = f.read().strip()
 lis = string.split('\n')
 mat = np.array([list(elem) for elem in lis])

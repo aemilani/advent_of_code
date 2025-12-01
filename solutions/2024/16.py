@@ -40,7 +40,7 @@ def print_maze(maze: List[List[str]]):
 
 
 if __name__ == "__main__":
-    with open('../../data/input/16.txt', 'r') as f:
+    with open('../../data/2024/16.txt', 'r') as f:
         string = f.read().strip()
 
     maze = np.array([list(row) for row in string.split('\n')])

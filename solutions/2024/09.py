@@ -72,7 +72,7 @@ def checksum(disk):
 
 
 if __name__ == "__main__":
-    with open('../../data/input/09.txt', 'r') as f:
+    with open('../../data/2024/09.txt', 'r') as f:
         string = f.read().strip()
 
     disk = decode_map(string)

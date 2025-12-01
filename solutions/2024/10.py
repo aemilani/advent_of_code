@@ -24,7 +24,7 @@ def dfs(x, y, path, visited, results, matrix, directions):
 
 
 if __name__ == "__main__":
-    with open('../../data/input/10.txt', 'r') as f:
+    with open('../../data/2024/10.txt', 'r') as f:
         string = f.read().strip()
 
     mat = np.array([list(line) for line in string.split('\n')]).astype(int)

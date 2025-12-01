@@ -1,4 +1,4 @@
-with open('../../data/input/03.txt', 'r') as f:
+with open('../../data/2024/03.txt', 'r') as f:
     string = f.read().strip()
 
 result = 0

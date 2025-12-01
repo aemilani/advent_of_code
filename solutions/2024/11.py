@@ -28,7 +28,7 @@ def blink_n_times(stones, n_times):
 
 
 if __name__ == "__main__":
-    with open('../../data/input/11.txt', 'r') as f:
+    with open('../../data/2024/11.txt', 'r') as f:
         string = f.read().strip()
     line = string.split()
 
