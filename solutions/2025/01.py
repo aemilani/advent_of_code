@@ -18,10 +18,6 @@ def part_1(input_string: str) -> int:
 
 
 def hits_on_zero_in_rotation(old: int, steps: int, direction: str) -> int:
-    """
-    Count how many times the dial hits 0 during a rotation of `steps` clicks
-    starting from `old` (0..99). direction is 'L' or 'R'.
-    """
     if steps <= 0:
         return 0
 
